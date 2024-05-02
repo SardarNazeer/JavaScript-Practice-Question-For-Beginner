@@ -47,3 +47,33 @@ var temp = s*(s-a)*(s-b)*(s-c);
 var area = Math.sqrt(temp);
 
 console.log("the area is = " + temp);
+
+// q4) Swap Two Numbers Using temporary Variable & Without Temporary Variable
+
+// temporay variable 
+
+var a = prompt("enter the value of a");
+var b = prompt("enter the value of b");
+
+document.write(`the value of a is: ${a}, the value of b is: ${b}`);
+
+var temp;
+
+temp = a;
+a = b;
+b = temp;
+
+document.write(` after swaping <br> the value of a is: ${a}, after swaping \n the value of b is: ${b}`);
+
+// without temporary variable 
+
+var a = parseInt(prompt("enter the value of a")); // 7
+var b = parseInt(prompt("enter the value of b")); // 9
+
+document.write(`the value of a is: ${a}, the value of b is: ${b}`);
+
+a = a + b; // a = 7 + 9 = 16
+b = a - b; // b = 16 - 9 = 7;
+a = a - b; // a = 16 - 9 = 7;
+
+document.write(` after swaping the value of a is: ${a}, after swaping  the value of b is: ${b}`);
