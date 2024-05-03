@@ -1,4 +1,9 @@
-// q1) how to add two numbers 
+// q1) print hello word
+
+let print = "Hello word";
+document.write(print);
+
+// q2) how to add two numbers 
 // i) for static number (jo fixed ho)
 // ii) for dynamic number (jo user dega)
 
@@ -20,14 +25,14 @@ let z = integerNumber1 + integerNumber2;
 
 document.write("The sum of "+ x + " and " + y + " is: " + z);
 
-// q2) Square root of a Number
+// q3) Square root of a Number
 
 var a = prompt("enter a number for square root");
 var sqr = Math.sqrt(a);
 
 document.write("The square root of = " + sqr);
 
-// q3) Calculate the Area of a Triangle
+// q4) Calculate the Area of a Triangle
 
 let base = prompt("enter the value of base of a triangle");
 let height = prompt("enter the value of height of a triangle");
@@ -48,7 +53,7 @@ var area = Math.sqrt(temp);
 
 console.log("the area is = " + temp);
 
-// q4) Swap Two Numbers Using temporary Variable & Without Temporary Variable
+// q5) Swap Two Numbers Using temporary Variable & Without Temporary Variable
 
 // temporay variable 
 
@@ -77,3 +82,21 @@ b = a - b; // b = 16 - 9 = 7;
 a = a - b; // a = 16 - 9 = 7;
 
 document.write(` after swaping the value of a is: ${a}, after swaping  the value of b is: ${b}`);
+
+
+// q6) Convert kilometers to miles using JavaScript Function
+
+function convert(){
+    var kms = document.getElementById('data').value;
+    const factor = 0.621371;
+    var miles = kms * factor;
+    document.getElementById('result').innerText = miles;
+}
+
+// q7) Convert Celsius to Fahrenheit using JavaScript Function
+
+function convertCelcius(){
+    var celcius = document.getElementById('celcius').value;
+    const Fahrenheit = celcius * 1.8 + 32;
+    document.getElementById('res').innerText = Fahrenheit;
+}
