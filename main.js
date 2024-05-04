@@ -100,3 +100,27 @@ function convertCelcius(){
     const Fahrenheit = celcius * 1.8 + 32;
     document.getElementById('res').innerText = Fahrenheit;
 }
+
+
+// q8) JavaScript Program to Check if a number is Positive, Negative, or Zero
+
+function check(){
+    var input = document.getElementById("num").value;
+    var res = Math.sign(input);
+    document.getElementById("resu").innerText = res;
+}
+
+// method2
+
+function check(){
+    var input = document.getElementById("num").value;
+    // var res = Math.sign(input);
+    if (input > 0) {
+        res = `${input} is a positive number`;
+    } else if(input < 0){
+        res = `${input} is an negative number`;
+    } else if(input == 0){
+        res = `${input} is a zero`;
+    }
+    document.getElementById("resu").innerText = res;
+}
