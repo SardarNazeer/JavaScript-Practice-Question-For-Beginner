@@ -124,3 +124,14 @@ function check(){
     }
     document.getElementById("resu").innerText = res;
 }
+
+// q9) JavaScript Program to Generate a Random Number using Math.random() Function
+
+// get a random number between 1 to 10 
+
+let a = Math.random() * (10-1) + 1;
+console.log(a);
+
+// floating number khatm krne ke liye 
+
+console.log(Math.floor(a));
