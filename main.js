@@ -135,3 +135,45 @@ console.log(a);
 // floating number khatm krne ke liye 
 
 console.log(Math.floor(a));
+
+
+// q10) JavaScript Program to Check if a Number is Odd or Even
+
+// using if-else 
+
+var a = parseInt(prompt("enter any number to check it is even or odd"));
+
+if(a%2 == 0){
+    alert('${a} is even number');
+} else if(a%2 != 0){
+    alert('${a} is odd number')
+} else {
+    alert('not a valid input')
+}
+
+// using ternary operator 
+
+var a = parseInt(prompt("enter any number to check it is even or odd"));
+
+var res = a%2 == 0 ? "even" : "odd";
+
+alert(res);
+
+// q11) JavaScript Program to Check if a Number is a Prime Number 
+
+var num = parseInt(prompt("enter num to check prime number"));
+
+if (num == 1) {
+    res = '${num} is not a prime number neither composite';
+} else if (num < 1) {
+    res = '${num} is not a prime number';
+} else {
+    for (let i = 0; i < num; i++) {
+        if (num % i == 0) {
+            res = '${num} is not a prime number';
+        } else {
+            res = '${num} is a prime number';
+        }
+    }
+    document.write(res);
+}
