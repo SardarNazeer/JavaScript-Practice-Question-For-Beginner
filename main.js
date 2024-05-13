@@ -177,3 +177,32 @@ if (num == 1) {
     }
     document.write(res);
 }
+
+
+// Q12) JavaScript Program to Find Largest Number Among Three Numbers
+
+// method1 
+
+var num1 = parseInt(prompt("Enter first number"));
+var num2 = parseInt(prompt("Enter second number"));
+var num3 = parseInt(prompt("Enter third number"));
+
+if (num1 > num2 && num1 > num3) {
+    alert(`${num1} is greater than among all`);
+} else if (num2 > num1 && num2 > num3) {
+    alert(`${num2} is greater than among all`);
+} else if (num3 > num1 && num3 > num2) {
+    alert(`${num3} is greater than among all`);
+} else{
+    alert('invalid input');
+};
+
+
+// method2 
+
+
+var a = parseInt(prompt("Enter first number"));
+var b = parseInt(prompt("Enter second number"));
+var c = parseInt(prompt("Enter third number"));
+var x = Math.max(a,b,c);
+document.write(`${a}, ${b}, ${c}: largest = ${x}`);
