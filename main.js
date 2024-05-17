@@ -206,3 +206,38 @@ var b = parseInt(prompt("Enter second number"));
 var c = parseInt(prompt("Enter third number"));
 var x = Math.max(a,b,c);
 document.write(`${a}, ${b}, ${c}: largest = ${x}`);
+
+
+// q13) JavaScript Program to Find the Factorial of a Number
+
+var number = prompt('please enter a number');
+var fact = 1;
+
+if(number == 0) {
+    console.log(`The Factorial Of ${number} is 1`);
+}else if(number < 0){
+    console.log('The Factorial Of A Negative Num Is Not Possible')
+}else{
+    for (var i = 0; i <= number; i++) {
+        fact = fact * i;
+    }
+    console.log(`The Factorial Of ${number} is ${fact}`);
+};
+
+// q14) JavaScript Program to Find the Factorial of a Number Using Recursion
+
+var num = prompt('enter a number');
+var fact = 1;
+
+function factorial(n){
+    if (n>num) {
+        return;
+    }
+    var tmp = fact;
+    fact = fact * n;
+    console.log(fact);
+    n++;
+    factorial(n);
+};
+
+factorial(1);
